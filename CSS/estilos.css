@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    /* CAMBIO DE COLOR 1: Fondo Azul Cielo (Mobile) */
+    background: #eef7ff; /* Fondo muy claro para contraste */
+    margin: 0;
+    padding: 16px;
+    color: #333;
+}
+form {
+    max-width: 720px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Sombra más definida */
+}
+h1 {
+    font-size: 1.5rem;
+    margin: 0 0 20px;
+    /* CAMBIO DE COLOR 2: Título Azul Cielo (Mobile) */
+    color: #33AADD; 
+    border-bottom: 2px solid #eef3f9;
+    padding-bottom: 10px;
+}
+.g {
+    margin: 12px 0;
+}
+label {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: bold;
+    color: #555;
+}
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cfcfd4;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+/* MÓVIL: Las columnas se muestran apiladas */
+.g-dos-columnas {
+    display: block; 
+    margin: 12px 0;
+}
+
+/* ACCIONES (Botones) */
+.acciones {
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+    text-align: center; 
+}
+button[type="submit"] {
+    padding: 10px 16px;
+    border: none;
+    /* CAMBIO DE COLOR 3: Botón principal Azul Cielo (Mobile) */
+    background: #33AADD; 
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+button[type="submit"]:hover {
+    background: #258fbb; /* Un poco más oscuro al pasar el ratón */
+}
+button[type="reset"] {
+    margin-left: 8px;
+    background: #eef3f9;
+    color: #0b6bcb;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+
+/* ======================================= */
+/* MEDIA QUERY: OPTIMIZACIÓN PARA TABLETS Y ESCRITORIO (Ancho > 600px) */
+/* Colores: Azul Marino */
+/* ======================================= */
+@media screen and (min-width: 600px) {
+    
+    /* CAMBIO DE COLOR 4: Fondo Azul Marino (Escritorio) */
+    body {
+        background: #F0F2F5; /* Fondo más neutro para que resalte el formulario */
+        padding: 50px; 
+    }
+
+    h1 {
+        /* CAMBIO DE COLOR 5: Título Azul Marino (Escritorio) */
+        color: #003366; 
+    }
+    
+    button[type="submit"] {
+        /* CAMBIO DE COLOR 6: Botón principal Azul Marino (Escritorio) */
+        background: #003366; 
+    }
+    button[type="submit"]:hover {
+        background: #001f3f; 
+    }
+
+    /* Habilitamos las dos columnas */
+    .g-dos-columnas {
+        display: flex; 
+        gap: 16px; 
+    }
+    .g-dos-columnas > .g {
+        flex: 1; 
+        margin: 0; 
+    }
+    
+    /* Alineamos los botones a la derecha */
+    .acciones {
+        text-align: right; 
+    }
+}
